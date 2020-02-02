@@ -33,7 +33,7 @@ API documentation is in `http://localhost:8015/swagger-ui.html`
 
 
 ## Athors: 
-* **Hamza HERMACH**  - [Alaeessaki](https://github.com/hermach)
+* **Hamza HERMACH**  - [HamzaHermach](https://github.com/hermach)
 * **Mehdi BZIKHA** 
 * **Rahma OMARA**
 
