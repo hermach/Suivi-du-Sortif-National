@@ -1,0 +1,17 @@
+  <div class="container">
+      
+        <div class="d-flex justify-content-end">
+            <a type="submit" href="/ajouteathlets/{{id}}" class="btn btn-secondary ">ajouter un athlet</a>
+            </div>
+        
+        <div class="row">
+           <div class="col-lg-3 col-md-6 col-xd-6 mt-1" *ngFor="let athlet of athlets"> 
+            <a routerLink="/one-athlet/{{athlet.id}}"> 
+                <img class="img-fluid" src="{{athlet.image}}" alt="image">
+                <p>{{ athlet.nom }} {{ athlet.prenom }}</p>
+                <p>{{ athlet.date_de_naissance }}</p> 
+            </a>
+     </div>
+        </div>
+    </div>
+    

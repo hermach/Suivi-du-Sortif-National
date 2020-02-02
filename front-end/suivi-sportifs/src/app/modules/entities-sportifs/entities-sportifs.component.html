@@ -1,0 +1,22 @@
+  <ng-container *ngIf="sport">
+    {{sport.nom}}  
+    </ng-container>
+    <div class="container">
+      
+        <div class="d-flex justify-content-end">
+            <ng-container *ngIf="sport">
+            <a type="submit" href="/ajout-entity-sportif/{{sport.id}}" class="btn btn-secondary ">ajouter un </a>
+        </ng-container>
+            </div>
+        
+        <div class="row">
+           <div class="col-lg-3 col-md-6 col-xd-6 mt-1" *ngFor="let sport of sports"> 
+            <a routerLink="/all-athlets/{{sport.id}}">
+                <p>{{ sport.nom }} {{ sport.type }}</p>
+            </a> 
+         </div>
+        </div>
+    </div>
+   
+    
+      

@@ -1,0 +1,16 @@
+<form [formGroup]="checkoutForm4" (ngSubmit)="onSubmit4(checkoutForm4.value)">
+    <div class="form-group">
+        <label for="name">nom</label>
+        <input id="name" class="form-control" type="text" formControlName="nom">
+     </div>  
+     <div class="form-group">
+        <label for="type">type</label>
+        <input id="type" class="form-control" type="text" formControlName="type">
+     </div>
+     <!-- <input type="hidden" formControlName="federation" value="">   -->
+     <input type="hidden" formControlName="sport" >
+
+    <div class="form-group">
+        <button class="button" class="btn btn-primary" type="submit">ajoute</button>
+    </div>
+</form>

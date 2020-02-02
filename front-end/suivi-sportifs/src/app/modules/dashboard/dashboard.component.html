@@ -1,0 +1,16 @@
+<div class="d-flex justify-content-end">
+<a type="submit" href="/ajoutefederation" class="btn btn-secondary ">ajouter un federation</a>
+</div>
+
+<div class="container">
+    <div class="row">
+       <div class="col-lg-3 col-md-6 col-xd-6 mt-1" *ngFor="let fed of federation">
+        <a routerLink="/detaill-federation/{{fed.id}}">
+            <img class="img-fluid" src="{{fed.image}}" alt="image">
+            <p>{{ fed.nom }}</p>
+        </a></div>
+    </div>
+</div>
+
+  
+

@@ -1,0 +1,18 @@
+<form [formGroup]="checkoutForm8" (ngSubmit)="onSubmit8(checkoutForm8.value)">
+    <div class="form-group">
+        <label for="label">age max</label>
+        <input id="label" class="form-control" type="text" formControlName="age_max">
+     </div>  
+     <div class="form-group">
+        <label for="label">age min</label>
+        <input id="label" class="form-control" type="text" formControlName="age_min">
+     </div> 
+     <div class="form-group">
+        <label for="label">category d'age</label>
+        <input id="label" class="form-control" type="text" formControlName="label">
+     </div> 
+    <div class="form-group">
+        <button class="button" class="btn btn-primary" type="submit">ajoute</button>
+    </div>
+</form> 
+

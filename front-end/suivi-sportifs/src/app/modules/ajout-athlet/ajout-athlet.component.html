@@ -1,0 +1,27 @@
+<form [formGroup]="checkoutForm2" (ngSubmit)="onSubmit2(checkoutForm2.value)">
+    <div class="form-group">
+        <label for="name">nom</label>
+        <input id="name" class="form-control" type="text" formControlName="nom">
+     </div>  
+     <div class="form-group">
+        <label for="prenom">prénom</label>
+        <input id="prenom" class="form-control" type="text" formControlName="prenom">
+     </div>  
+     <div class="form-group">
+        <label for="president">la date de naissance</label>
+        <input id="president" class="form-control" type="date" formControlName="date_de_naissance">
+     </div>  
+     <div class="form-group">
+      <label for="president">la date de debut</label>
+      <input id="president" class="form-control" type="date" formControlName="date_de_debut">
+   </div>
+     <div class="form-group">
+        <label for="image">image de l'Athlet</label>
+        <input id="image" class="form-control" type="file" formControlName="image">
+     </div>
+
+    <div class="form-group">
+        <button class="button" class="btn btn-primary" type="submit">ajoute</button>
+    </div>
+</form>
+

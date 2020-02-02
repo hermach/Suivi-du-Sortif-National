@@ -1,0 +1,26 @@
+
+    <div class="container">
+           <div class="center">
+            <ng-container *ngIf="fed">
+                <img class="img-fluid" [src]='fed.image' alt="image">
+                <h1>{{ fed.nom }}</h1>
+                <p><strong>{{ fed.description }}</strong></p>
+                <p>{{fed.president}}</p>
+                <div class="d-flex justify-content-start">
+                    <a routerLink="/tranch-age"><button type="button" class="btn btn-dark">ajout tranch age</button></a>
+                    <a type="submit" href="/ajout-competition/{{ fed.id }}" class="btn btn-secondary ">ajouter un competition</a>
+                    </div>
+                <div class="d-flex justify-content-end">
+                    <a type="submit" href="/ajoutesport/{{ fed.id }}" class="btn btn-secondary ">ajouter un sport</a>
+                    </div>
+                    <div class="row">
+                <div class="col-lg-3 col-md-6 col-xd-6 mt-1" *ngFor="let ss of fed.list_sports">
+                       <a routerLink="/entities-sportifs/{{ss.id}}"> <p>{{ ss.nom }}</p></a>
+                       <a routerLink="/ajout-critre/{{ss.id}}"><button mat-button color="primary"> critere de cet sport</button></a>
+                    </div>
+                </div>
+            </ng-container>
+      
+           </div>
+          
+    </div>

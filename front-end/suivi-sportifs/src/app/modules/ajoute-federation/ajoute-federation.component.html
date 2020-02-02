@@ -1,0 +1,23 @@
+ <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+    <div class="form-group">
+        <label for="name">nom</label>
+        <input id="name" class="form-control" type="text" formControlName="nom">
+     </div>  
+     <div class="form-group">
+        <label for="description">description</label>
+        <input id="description" class="form-control" type="text" formControlName="description">
+     </div>  
+     <div class="form-group">
+        <label for="president">president de la federation</label>
+        <input id="president" class="form-control" type="text" formControlName="president">
+     </div>  
+     <div class="form-group">
+        <label for="image">image de la federation</label>
+        <input id="image" class="form-control" type="file" formControlName="image">
+     </div> 
+
+    <div class="form-group">
+        <button class="button" class="btn btn-primary" type="submit">ajoute</button>
+    </div>
+</form>
+

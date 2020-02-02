@@ -1,0 +1,49 @@
+<ng-container *ngIf="athlet">
+
+    <div class="container">
+        <div class="d-flex justify-content-around">
+            <a type="submit" href="/performence/{{athlet.id}}" class="btn btn-secondary ">ajouter un performrnce</a>
+
+            <a type="submit" href="/" class="btn btn-success ">ajouter un performrnce de santé</a>
+        </div><br>
+        <div class="center">
+          
+             <img class="img-fluid" [src]='athlet.image' alt="image">
+             <h1>{{ athlet.nom }}</h1>
+             <p><strong>{{ athlet.prenom }}</strong></p> 
+             <p>{{athlet.date_de_naissance}}</p>   
+ </div>
+ </div>
+</ng-container>
+<div *ngFor="let per of journal_performence">
+<h6  class="d-flex justify-content-around">
+    <th scope="col">{{per.date_competition}}</th>
+    <th scope="col">{{per.tranch_age.label}}</th>
+    <th scope="col">{{per.competition.nom}}</th></h6>
+<table class="table table-sm table-dark">
+    <thead>
+      <tr>
+<th scope="col" *ngFor="let list of per.list_valeur_critere">{{ list.critere.nom }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td *ngFor="let list2 of per.list_valeur_critere">{{list2.valeur}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<div class="row">
+    <div class="card">
+      <canvas id="myChart"></canvas>
+</div>
+</div>
+
+
+
+  

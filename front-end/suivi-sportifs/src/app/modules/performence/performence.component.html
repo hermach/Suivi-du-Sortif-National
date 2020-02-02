@@ -1,0 +1,25 @@
+
+<form [formGroup]="checkoutForm9" (ngSubmit)="onSubmit9(checkoutForm9.value)">
+    <div class="form-group">
+        <label for="date">date de competition</label>
+        <input id="date" class="form-control" type="date" formControlName="date_competition" >
+     </div>  
+     <select class="browser-default custom-select" formControlName="tranchage" >
+        <option value="{{tranch.id}}"  *ngFor="let tranch of tranchAge">{{tranch.label}}</option>
+      </select><br><br>
+      
+      <select  class="browser-default custom-select" formControlName="epreuve">
+        <option value={{epreuv.id}}  *ngFor="let epreuv of epreuve">{{epreuv.label}}</option>
+      </select>
+      <br>
+      <select  class="browser-default custom-select" formControlName="competition">
+        <option value={{comp.id}}  *ngFor="let comp of competition">{{comp.nom}}</option>
+      </select>
+    <div class="form-group">
+        <button class="button" class="btn btn-primary" type="submit">ajoute</button>
+    </div>
+</form>
+
+
+
+

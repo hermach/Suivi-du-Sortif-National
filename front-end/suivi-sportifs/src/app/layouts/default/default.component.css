@@ -1,0 +1,22 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+/* app-header {
+    margin-left: 15rem;
+} */
+
+mat-drawer {
+    width: 15%;
+}
+
+mat-drawer-container {
+    height: 100%;
+}
+
+mat-drawer-content {
+    padding: 1rem;
+}
