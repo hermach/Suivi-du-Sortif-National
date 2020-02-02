@@ -38,5 +38,9 @@ API documentation is in `http://localhost:8015/swagger-ui.html`
 * **Mehdi BZIKHA** 
 * **Rahma OMARA**
 
+## Licence & Copyright
+© HERMACH Hamza,OMARA Rahma BZIKHA Mehdi.
+
+Licensed under the [MIT Licence](LICENSE)
 
 
